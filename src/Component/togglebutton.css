@@ -43,3 +43,25 @@
 .text-change {
   color: white;
 }
+@media screen and (max-width: 769px) {
+  .container {
+    height: 912px;
+  }
+  .container-change {
+    height: 912px;
+  }
+}
+.name-text {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  color: #c04660;
+}
+.name-text-change {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  color: #3258a0;
+}

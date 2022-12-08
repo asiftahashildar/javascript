@@ -3,9 +3,11 @@ import "./togglebutton.css";
 
 export const ToggleButton = () => {
   const [clickChange, setClickChange] = useState(false);
+
   const handleClick = () => {
     setClickChange(!clickChange);
   };
+
   return (
     <div className={clickChange ? "container-change" : "container"}>
       <div className="child-container">
@@ -23,6 +25,11 @@ export const ToggleButton = () => {
       ) : (
         <h1>Bulb On</h1>
       )}
+      <div className={clickChange ? "name-text-change" : "name-text"}>
+        <h1>A</h1>
+        <h1>K</h1>
+        <h1>T</h1>
+      </div>
     </div>
   );
 };
